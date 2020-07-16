@@ -26,10 +26,10 @@ public class Main2 {
 		int n = 200000;
 		switch (algo) {
 		case "algo1":
-			System.out.println("==Method 1 calculation results：" + sum1(n));
+			System.out.println("==Method 1 calculation results:" + sum1(n));
 			break;
 		case "algo2":
-			System.out.println("==Method 2 calculation results：" + sum2(n));
+			System.out.println("==Method 2 calculation results:" + sum2(n));
 			break;
 		default:
 			//usage();
@@ -38,7 +38,7 @@ public class Main2 {
 	}
 
 	private static void usage() {
-		System.out.println("Usage method: java -jar sum-0.0.1-SNAPSHOT.jar --type [algo1|algo2]");
+		System.out.println("Usage method : java -jar sum-0.0.1-SNAPSHOT.jar --type [algo1|algo2]");
 		System.exit(1);
 	}
 
