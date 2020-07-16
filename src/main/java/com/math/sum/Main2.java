@@ -16,7 +16,7 @@ public class Main2 {
 		 * String algo = args[1];
 		 */
 
-		System.out.println("请输入使用的方法：[algo1|algo2]");
+		System.out.println("Please enter the method used：[algo1|algo2]");
 		Scanner scanner = new Scanner(System.in);
 		String algo = "";
 		if(scanner.hasNext()) {
@@ -26,25 +26,25 @@ public class Main2 {
 		int n = 200000;
 		switch (algo) {
 		case "algo1":
-			System.out.println("==方法1计算结果：" + sum1(n));
+			System.out.println("==Method 1 calculation results：" + sum1(n));
 			break;
 		case "algo2":
-			System.out.println("==方法2计算结果：" + sum2(n));
+			System.out.println("==Method 2 calculation results：" + sum2(n));
 			break;
 		default:
 			//usage();
-			System.out.println("不支持的方法:" + algo);
+			System.out.println("Unsupported methods:" + algo);
 		}
 	}
 
 	private static void usage() {
-		System.out.println("使用方法: java -jar sum-0.0.1-SNAPSHOT.jar --type [algo1|algo2]");
+		System.out.println("Usage method: java -jar sum-0.0.1-SNAPSHOT.jar --type [algo1|algo2]");
 		System.exit(1);
 	}
 
 	/**
 	 * 不考虑性能的循环判断整除
-	 * 
+	 * Cyclic Judgment Dividing Without Consideration of Performance
 	 * @param n
 	 * @return
 	 */
@@ -66,7 +66,7 @@ public class Main2 {
 
 	/**
 	 * 筛选法，从小到大逐步筛去i(i从2开始)的倍数。此方法循环次数比方法一少故较快
-	 * 
+	 * Screening method, step by step from small to large to screen multiples of I (i from 2).This method has fewer cycles than the first method, so it is faster.
 	 * @param n
 	 * @return
 	 */
